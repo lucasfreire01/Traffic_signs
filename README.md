@@ -35,7 +35,7 @@ We have 3 datasets(train, test, valid) in pickle all database is constituted wit
           [ 31,  27,  24],<br>
           [ 30,  27,  25]],<br>
 take attention in the features this mind the pixels in images all databases have these column features. Next split these database in x_train, x_test, x_valid, y_train, y_test, y_valid 
-where the X variable is the features, and the Y Variables are the labels. Bellow there is a example of a colorful picture.
+where the X variable is the features, and the Y Variables are the labels. Bellow there is a example of a colorful picture.<br>
 ![colorful_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download.png)<br>
 Changing these pictures to colorful for gray help us with some things, these images are transformed into gray pictures because the colorful images are 3 buses (R, G, B) for example (187, 222, 87) when we get a gray image in RGB will be for example(187, 187, 187) we have gray in the RGB base when all values are the same the color is gray this enables us to use 1 buses because the number is the same that is the 3 buses(R G B), bellow is an example in the gray. After we norm these values based on the white number in RGB (255). The images below are the first picture in gray next the image in colorful and next the gray norm.<br>
 ![gray_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download1%20(2).png)<br>
