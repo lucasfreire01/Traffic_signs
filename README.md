@@ -41,3 +41,31 @@ Changing these pictures to colorful for gray help us with some things, these ima
 ![gray_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download1%20(2).png)<br>
 ![colorful_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download2%20(2).png)<br>
 ![gray_norm_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download3%20(2).png)<br>
+## Model
+This model is used based on the LeNet architecture. Here is a soon description of the LeNet.<br>
+
+LeNet is a classic convolutional neural network (CNN) architecture developed in 1998 by Yann LeCun and others. It was designed for handwritten character recognition tasks, with a focus on simplicity and effectiveness. The architecture includes convolutional layers, average pooling, and fully connected layers, showcasing the principles that have influenced many subsequent CNN designs. LeNet played a key role in establishing the viability of deep learning for image recognition.<br>
+![gray_norm_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/Capturar.PNG)<br>
+This is the architecture. Bellow there is the summary of the model with the sequential layers in the conv2d because these pictures are 2d using a pooling(avarege_pooling) that 
+we reduce the dimension taking a square and result in a new square with the mean for the output after the processing of images is use the Dense(layer) 
+| Layer (type)             | Output Shape       | Param # |
+| ------------------------ | ------------------ | ------- |
+| conv2d                   | (None, 28, 28, 6)  | 156     |
+| average_pooling2d        | (None, 14, 14, 6)  | 0       |
+| conv2d_1                 | (None, 10, 10, 16) | 2416    |
+| average_pooling2d_1      | (None, 5, 5, 16)   | 0       |
+| flatten                  | (None, 400)        | 0       |
+| dense                    | (None, 120)        | 48120   |
+| dense_1                  | (None, 84)         | 10164   |
+| dense_2                  | (None, 43)         | 3655    |
+
+===========================================================<br>
+Total params: 64511 (252.00 KB)<br>
+Trainable params: 64511 (252.00 KB)<br>
+Non-trainable params: 0 (0.00 Byte)<br>
+The model running 50 epochs with a batch = 500 and the accuracy in the test dataset get us 84,75%
+![gray_norm_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download1%20(3).png)<br>
+![gray_norm_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download2%20(3).png)<br>
+Now we have the confusion matrics and a frame of result if the model is across with the real values.
+![gray_norm_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download1%20(4).png)<br>
+![gray_norm_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download2%20(4).png)<br>
