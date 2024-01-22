@@ -69,3 +69,5 @@ The model running 50 epochs with a batch = 500 and the accuracy in the test data
 Now we have the confusion matrics and a frame of result if the model is across with the real values.
 ![gray_norm_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download1%20(4).png)<br>
 ![gray_norm_picture](https://github.com/lucasfreire01/Traffic_signs/blob/main/download2%20(4).png)<br>
+This project did in the Practical Deep Learning with TensorFlow and Python at AI Expert academy. Link bellow:<br>
+https://iaexpert.academy/?doing_wp_cron=1705932255.1060640811920166015625
